@@ -6,3 +6,7 @@ Mini social media i developed from scratch with pure php and mysql for my degree
 
 
 ![msocial img 1](https://github.com/rgstech/mysocialmedia/blob/master/screenshots/mysocialmedia1.jpg?raw=true)
+![msocial img 1](https://github.com/rgstech/mysocialmedia/blob/master/screenshots/mysocialmedia2.jpg?raw=true)
+![msocial img 1](https://github.com/rgstech/mysocialmedia/blob/master/screenshots/mysocialmedia4.jpg?raw=true)
+![msocial img 1](https://github.com/rgstech/mysocialmedia/blob/master/screenshots/mysocialmedia5.jpg?raw=true)
+![msocial img 1](https://github.com/rgstech/mysocialmedia/blob/master/screenshots/mysocialmedia3.jpg?raw=true)
