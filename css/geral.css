@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+h5.msg  {	
+	 
+	 font-family:"Comic Sans MS", cursive
+		 
+}
+
+#welcomeh {
+
+      /* font-family:"Comic Sans MS", cursive; */
+	  font-size : small;
+}
+
+#welcome_name{
+   
+    color:#6600CC;
+    font-size : small;
+}
+
+body {
+	width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* html #tudo {height: 100%;} */
+
+#tudo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    min-height: 100%;
+    background-color: #F5F5F5; 
+}
+
+#conteudo {
+    padding-bottom: 0px;
+}
+
+#rodape {
+    
+	position: relative;
+    bottom: 0;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: #F5F5F5;
+    clear: both;
+
+}
+
+#cabecalho {
+   /* background-color: #F5F5F5; */
+    height: 120px;
+}
+
+
+
+
+
