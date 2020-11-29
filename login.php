@@ -93,7 +93,7 @@ var d = document.formch;
     
 <hr />
 
-<?php include_once 'foot.php';   ?>
+<?php require_once 'foot.php';   ?>
 
 
 </div>
