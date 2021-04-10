@@ -1,6 +1,6 @@
 <?php 
 require_once 'classes/Session.php';
-session_start();
+Session::start();
 
 if (Session::hasValue('login')) {
     
