@@ -7,7 +7,7 @@
 class Session
 {
     /**
-     * inicializa uma seção
+     * inicializa uma sessão
      */
     public static function start()
     {
@@ -18,7 +18,7 @@ class Session
     }
 
     /**
-     * Armazena uma variável na seção
+     * Armazena uma variável na sessão
      * @param $var     = Nome da variável
      * @param $value = Valor
      */
@@ -27,8 +27,8 @@ class Session
         $_SESSION[$var] = $value;
     }
     
-       public static function setArray(Array $arr)
-       {
+    public static function setArray(Array $arr)
+    {
        
            foreach($arr as $key => $value) {
               
@@ -36,7 +36,7 @@ class Session
            }
            
           
-       }
+    }
        
     public static function getArray()
     {
@@ -53,7 +53,7 @@ class Session
     }
 
     /**
-     * Retorna uma variável da seção
+     * Retorna uma variável da sessão
      * @param $var = Nome da variável
      */
     public static function getValue($var)
@@ -90,7 +90,7 @@ class Session
         return FALSE;
     }
     /**
-     * Destrói os dados de uma seção
+     * Destrói os dados de uma sessão
      */
     public static function free()
     {
