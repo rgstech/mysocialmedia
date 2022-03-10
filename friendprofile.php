@@ -38,11 +38,11 @@ $db->SetSELECT("usu_nome as nome,
     
                             <h5 class="box-title"><strong> Perfil de <?php echo  $linha['nome']; ?> </strong> </h5>
       <div class="form-group">       
-    <table align="center" width="495" height="104" class='table-bordered'>
+      <table align="center" width="495" height="104"  class="table-condensed"style="border: none">
         
         
   <tr>
-      <td width="135" rowspan="6"> <img src='<?php echo $linha['image']; ?>'> </td>
+      <td width="135" rowspan="6"> <img class="img-circle" alt="friend-profile" src='<?php echo $linha['image']; ?>'> </td>
    
   </tr>
   <tr>

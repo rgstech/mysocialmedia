@@ -29,7 +29,7 @@ function refreshLikesPost(pid, uid, elemento){
     <a href="newpost.php" class="btn btn-primary glyphicon glyphicon-plus" role="button">&nbsp;Novo</a>  
     </div>
   
-    <div class="form-group" style="background-color: #F5F5F5">
+    <div class="form-group home-posts-wrapper" style="background-color: #fbfbfb">
          <table class="table-bordered" align="center" width="200">
    <?php 
 
@@ -86,7 +86,7 @@ $DataSet = $db->GetDataSet();
  
    <tr>
 
-       <td width="30px" rowspan="2"> <img style="width: 108px; height: 108px" src="<?php echo $linha['image'] ?>"><br> <br> 
+       <td width="30px" rowspan="2"> <img style="width: 108px; height: 108px" class="img-circle" src="<?php echo $linha['image'] ?>"><br> <br> 
            <a href="friendprofile.php?uid=<?php echo $linha['uid']; ?>" class="label label-primary"> <?php echo $linha['nome']; ?></a>
            <label> <?php echo  Util::formatDateTime($linha['data']); ?> </label>
        </td>

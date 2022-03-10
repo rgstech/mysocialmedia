@@ -8,12 +8,12 @@
 <div id="tudo">
     
 <div class="box box-primary">
-<div class="box-header with-border">
+<div class="box-header ">
        <h5 class="box-title"> <strong> Perfil de <?php echo Session::getValue('nome'); ?> </strong> </h5>
 <div class="form-group">   
-    <table align="center" width="495" height="104" class='table-bordered'>
+    <table align="center" width="495" height="104"  class="table-condensed"style="border: none">
   <tr>
-      <td width="135" rowspan="6"> <img src='<?php echo Session::getValue('image'); ?>'> </td>
+      <td width="135" rowspan="6"> <img class="img-circle" alt="my-profile" src='<?php echo Session::getValue('image'); ?>'> </td>
   </tr>
   <tr>
     <td width="344" height="23"><strong> Nome:</strong> &nbsp;  <?php echo  htmlspecialchars(Session::getValue('nome')); ?></td>

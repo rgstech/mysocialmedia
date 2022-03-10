@@ -3,7 +3,7 @@
 
 h5.msg  {	
 	 
-	 font-family:"Comic Sans MS", cursive
+	 font-family: 'Open Sans', sans-serif;
 		 
 }
 
@@ -13,13 +13,14 @@ h5.msg  {
 	  font-size : small;
 }
 
-#welcome_name{
+#welcome_name {
    
     color:#6600CC;
     font-size : small;
 }
 
 body {
+    
 	width: 100%;
     height: 100%;
 	margin: 0;
@@ -58,6 +59,7 @@ body {
    /* background-color: #F5F5F5; */
     height: 120px;
 }
+
 
 
 
