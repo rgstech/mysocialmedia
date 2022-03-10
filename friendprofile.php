@@ -47,11 +47,11 @@ $db->SetSELECT("usu_nome as nome,
   </tr>
   <tr>
    
-      <td width="344" height="23"><strong>Nome:</strong>&nbsp;  <?php echo $linha['nome']; ?></td>
+      <td width="344" height="23"><strong>Nome:</strong>&nbsp;  <?php echo htmlspecialchars($linha['nome']); ?></td>
   </tr>
   <tr>
     
-    <td height="23"><strong>Email:</strong>&nbsp;  <?php echo $linha['email']; ?></td>
+    <td height="23"><strong>Email:</strong>&nbsp;  <?php echo htmlspecialchars($linha['email']); ?></td>
   </tr>
   <tr>
     
