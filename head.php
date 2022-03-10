@@ -6,11 +6,11 @@
  
  Session::start();
 
-  if (!Session::hasValue('login')){   
+ if (!Session::hasValue('login')) {   
     
       header('Location: login.php');
    
-} 
+  } 
  
  ?>
 
@@ -18,38 +18,39 @@
 <html>
 <head>
 
-<title> My social Media</title>
+<title> My social Media </title>
 
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/geral.css">
   
-<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
-  
-
 
 </head>
 
 <body>
-<div id="cabecalho">
+  <header>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img style='width: 30px; height: 30px;' alt='' src='images/logoSocial.png'></a>
+    </div>
+    <!-- <ul class="nav navbar-nav"> 
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul> -->
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="perfil.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['nome']; ?> </a></li>
+      <li><a href="exit.php"><span class="glyphicon glyphicon-log-in"></span> Sair </a></li>
+    </ul>
+  </div>
+</nav>
+  </header>
 
-<div id="logooi" ><table id="tblogo" border='0' cellpadding='0' cellspacing='0'><tbody bgcolor='#7E78B6'>
-  <tr>
-      <td style='width: 64px;'><img style='width: 64px; height: 64px;' alt='' src='images/logoSocial.png'></td>
-      <td style='width:32px;'>&nbsp;&nbsp;&nbsp;</td>
-	  <td style='width: 100%; font-family: Trebuchet MS; color: rgb(255, 255, 255);'><big> MY SOCIAL MEDIA </big><br><small> HOME!</small> <br></td>
-  </tr></tbody></table> 
-	  
-</div>
-    <h5 align='right' id="welcomeh" class="small">  Seja Bem Vindo(a): <span id="welcome_name"> <a href="perfil.php"> <?php echo $_SESSION['nome']; ?> </a></span> &nbsp; </h5>
-    <h5 align='right' id="welcomeh" class="small">   <span id="welcome_name"> <a href="exit.php" class="glyphicon glyphicon-log-out"> Sair </a></span> &nbsp; </h5>
-</div>
     <hr>
     
     <div class="container">

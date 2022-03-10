@@ -60,6 +60,13 @@ body {
     height: 120px;
 }
 
+textarea {
+    border-radius: 10px;
+}
+
+textarea:hover {
+    background-color: #6600CC;
+}
 
 
 
