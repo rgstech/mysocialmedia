@@ -29,7 +29,7 @@ if ( isset($_POST['action']) ) {
                                            
 
          } else {
-                      echo "error! " . $conn->error();
+                    //   echo "error! " . $conn->error();
                       echo "<script> alert('Seu texto nao pode ser postado, tente novamente'); 
                                              window.location='home.php;  
                             </script>";

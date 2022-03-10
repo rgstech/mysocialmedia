@@ -96,7 +96,7 @@ if ( isset($_POST['action']) ) {
     
     <table align="center">
     
-        <tr>   <td colspan="2"> <textarea rows="10" cols="80" name="txtcomment" placeholder="escreve aqui seu comentario..."> <?php echo $textcomment; ?> </textarea>  
+        <tr>   <td colspan="2"> <textarea rows="10" cols="80" name="txtcomment" placeholder="escreve aqui seu comentario..."> <?php echo  htmlspecialchars($textcomment); ?> </textarea>  
                 <br>
                  <div class="form-group">
                     <button class="btn btn-success" name="enviar"> Enviar </button>

@@ -38,7 +38,7 @@
 <body>
 <div id="cabecalho">
 
-<div id="logooi" style="" ><table id="tblogo" border='0' cellpadding='0' cellspacing='0'><tbody bgcolor='#7E78B6'>
+<div id="logooi" ><table id="tblogo" border='0' cellpadding='0' cellspacing='0'><tbody bgcolor='#7E78B6'>
   <tr>
       <td style='width: 64px;'><img style='width: 64px; height: 64px;' alt='' src='images/logoSocial.png'></td>
       <td style='width:32px;'>&nbsp;&nbsp;&nbsp;</td>

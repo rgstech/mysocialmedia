@@ -92,7 +92,7 @@ if ( isset($_POST['action']) ) {
     <input type="hidden" name="pid" value="<?php echo $pid; ?>">
     
     <table align="center">
-        <tr><td colspan="2"> <textarea rows="10" cols="80" name="txtpost" > <?php echo $posttext; ?> </textarea>  
+        <tr><td colspan="2"> <textarea rows="10" cols="80" name="txtpost" > <?php echo  htmlspecialchars($posttext); ?> </textarea>  
                 <br>
                  <div class="form-group">
                     <button class="btn btn-success" name="enviar"> Enviar </button>

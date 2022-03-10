@@ -110,7 +110,7 @@ function refreshLikesComm(cid, uid, elemento){
 
       <td> 
           
-      <textarea disabled="true" rows="8" cols="60"> <?php echo $linha['texto'] ?> </textarea>
+      <textarea disabled="true" rows="8" cols="60"> <?php echo htmlspecialchars($linha['texto']); ?> </textarea>
       <div class="form-group">  
                                                         
          <button class="btn btn-info glyphicon glyphicon-thumbs-up" onclick="refreshLikesComm(<?php echo $linha['cid']; ?> , <?php echo $_SESSION['id']; ?> , this);"> <?php echo $qtdLikes ?> </button> 

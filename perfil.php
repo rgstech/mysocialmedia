@@ -16,13 +16,13 @@
       <td width="135" rowspan="6"> <img src='<?php echo Session::getValue('image'); ?>'> </td>
   </tr>
   <tr>
-    <td width="344" height="23"><strong> Nome:</strong> &nbsp;  <?php echo Session::getValue('nome'); ?></td>
+    <td width="344" height="23"><strong> Nome:</strong> &nbsp;  <?php echo  htmlspecialchars(Session::getValue('nome')); ?></td>
   </tr>
   <tr>
-    <td height="23"><strong> Email:</strong> &nbsp;  <?php echo Session::getValue('email'); ?></td>
+    <td height="23"><strong> Email:</strong> &nbsp;  <?php echo  htmlspecialchars(Session::getValue('email')); ?></td>
   </tr>
   <tr>
-    <td height="23"><strong> Telefone:</strong> &nbsp;  <?php echo Session::getValue('tel'); ?></td>
+    <td height="23"><strong> Telefone:</strong> &nbsp;  <?php echo  htmlspecialchars(Session::getValue('tel')); ?></td>
   </tr>
   <tr>
       <td height="23"><strong>Usuario desde:</strong>&nbsp;  <?php echo Util::formatDate(Session::getValue('data_cad')); ?></td>
