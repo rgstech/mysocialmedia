@@ -42,7 +42,7 @@ CREATE TABLE `tbusuario` (
 
 LOCK TABLES `tbusuario` WRITE;
 /*!40000 ALTER TABLE `tbusuario` DISABLE KEYS */;
-INSERT INTO `tbusuario` VALUES (1,'rodrigo','123','Rodrigo O.','rod@email.net','7188888888','images/rod.jpg','2016-11-18 00:00:00','m'),(2,'usuario','123','Manolo da Silva','user@emai.net','799999999','images/manolo.jpg','2016-11-18 00:00:00','m'),(3,'Rachel','123','Rachel Lawrence','gringa@bonita.net','796666666','images/rachel.jpg','2016-11-18 00:00:00','f'),(4,'jessica','123','Jessica Wauters','jessi@myemail.net','7177889900','images/jessica.jpg','2016-11-26 00:00:00','f'),(5,'inna','123','Elena Alexandra ','inna@clubrokcers','7188997766','images/inna.jpg','2016-11-26 00:00:00','f');
+INSERT INTO `tbusuario` VALUES (1,'rodrigo','123','Rodrigo O.','rodrigo@email.net','7188888888','images/rod.jpg','2016-11-18 00:00:00','m'),(2,'usuario','123','Manolo da Silva','manolo@email.net','799999999','images/manolo.jpg','2016-11-18 00:00:00','m'),(3,'Rachel','123','Rachel Lawrence','rachel@email.net','796666666','images/rachel.jpg','2016-11-18 00:00:00','f'),(4,'jessica','123','Jessica Wauters','jessica@myemail.net','7177889900','images/jessica.jpg','2016-11-26 00:00:00','f'),(5,'inna','123','Elena Alexandra ','inna@email.net','7188997766','images/inna.jpg','2016-11-26 00:00:00','f');
 /*!40000 ALTER TABLE `tbusuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
