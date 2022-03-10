@@ -6,6 +6,11 @@
  * @author Rodrigo.Guimaraes
  * 
  */
+ // Classe originalmente criada por William Pereira Alves 
+//  para o livro Construindo uma Aplicação web Completa com PHP e MySQL
+ // Modificada e adaptda por Rodrigo Guimarães (github: rgstech)
+ // 
+ // Class originally created by William Pereira Alves and modified and adapted by Rodrigo Guimarães (github: rgstech)
 
 class DataBase
 {
@@ -39,7 +44,10 @@ class DataBase
     // Métodos públicos
     public function AbrirConexao()
     {
-        $this->ConexaoBanco = new mysqli($this->IdServidor, "root", "2020", "mysocialmedia");
+        //$this->ConexaoBanco = new mysqli($this->IdServidor, "root", "2020", "mysocialmedia"); // use essa linha aon inves a debaixo/ you should use this line instead of below
+
+        $this->ConexaoBanco = new mysqli($this->IdServidor, "root", "2020", "mysocialmedia1"); // mudei para essa linha para funcionar em meu banco de dados local 
+                                                                                               // changed to mysocialmedia1 to work in my local data server server
 
         if (mysqli_connect_errno() != 0) {
             $this->ConexaoBanco = NULL;
