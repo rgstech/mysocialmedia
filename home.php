@@ -97,7 +97,7 @@ $DataSet = $db->GetDataSet();
 
       <td> 
           
-      <textarea class="form-group" disabled="true" rows="8" cols="60"> <?php echo  htmlspecialchars($linha['texto']); ?> </textarea>
+      <textarea class="form-group" disabled="true" rows="6" cols="60"> <?php echo  htmlspecialchars($linha['texto']); ?> </textarea>
       <div class="form-group">  
           
           <div class="form-group">   <a  class="label label-primary" href="comments.php?pid=<?php echo $linha['pid']; ?>"> comentarios:  &nbsp; <?php echo $qtdcom; ?> </a> &nbsp; </div>

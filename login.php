@@ -49,10 +49,15 @@ var d = document.formch;
  <body class="corpo"> 
  
  <div id="tudo">
+     <div class="container">
+
+
+     
  
  
- <div id="cabecalho" align='center'>
-     <img src="images/logoSocialB.jpg" width="100%" height="60%">     
+ <div id="cabecalho" align='center' style="width: 100%; margin: auto 0;">
+ 
+     <img src="images/logoSocialB.jpg" width="100%" height="58%">     
   <!-- <h2 align="center" > <strong><font color="white"> Ger. Gest�o e Controle</font> <br /> </strong> </h2> --> 
   </div> 
   
@@ -70,11 +75,11 @@ var d = document.formch;
     <form style="width: 15%; height: 280px" name="formch" method="POST" action="enter.php" OnSubmit="return valida_campos()">
     <div class="form-group">
         <label for="inputUser">Usuario</label>
-        <input type="text" class="form-control" name= "user" id="inputUser" placeholder="Usuario">
+        <input type="text" class="form-control" name= "user" id="inputUser" placeholder="...">
     </div>
     <div class="form-group">
         <label for="inputPassword">Senha</label>
-        <input type="password" class="form-control" name="pass" id="inputPassword" placeholder="Senha">
+        <input type="password" class="form-control" name="pass" id="inputPassword" placeholder="...">
     </div>
     
     <button type="submit" class="btn btn-primary">Login</button>
@@ -95,7 +100,7 @@ var d = document.formch;
 
 <?php require_once 'foot.php';   ?>
 
-
+</div>
 </div>
 
 </body>
