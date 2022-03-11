@@ -62,10 +62,11 @@ if ( isset($_POST['action']) ) {
     $db->FecharConexao();
      
      if ($resultUpdate) {
+         
          echo "<div align='center'>";   
          echo "<label style='font-size: 12px;' class='label label-success' align='center'>Comentario atualizado sucesso!</label>";
          echo "</div>"; 
-	 echo "<br>";
+	     echo "<br>";
  
         } else {
          
