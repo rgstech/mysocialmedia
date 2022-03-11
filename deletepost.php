@@ -2,6 +2,7 @@
 
 require_once 'db/DataBase.php';
 require_once 'classes/Session.php';
+require_once 'classes/Security.php';
 
 // inicia a sessão
 Session::start();
@@ -21,6 +22,13 @@ $db = new DataBase();
 
 $pid = $_GET["pid"];
 
+
+if (!Security::checkPostOwnerShip($pid, Session::getValue('id'))){ //verifica dono do comentario, somente o autor pode apagar o comentario
+
+	header("Location: home.php");
+	exit();
+
+}
 
 $db->AbrirConexao();
   
@@ -50,5 +58,5 @@ if ( $retorno == true ) {
 	     </script>";
 
 }
-
+ 
 ?>

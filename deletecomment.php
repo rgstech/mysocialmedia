@@ -2,9 +2,13 @@
 
 require_once 'db/DataBase.php';
 require_once 'classes/Session.php';
+require_once 'classes/Security.php';
 
 // inicia a sessão
 Session::start();
+
+
+
 
 //inicia/instancia o banco de dados
 $db = new DataBase();
@@ -18,6 +22,13 @@ $db = new DataBase();
 }
 
 $cid = $_GET["cid"];
+
+if (!Security::checkCommentOwnerShip($cid, Session::getValue('id'))){ //verifica dono do comentario, somente o autor pode apagar o comentario
+
+	header("Location: home.php");
+	exit();
+
+}
 
 $db->AbrirConexao();
   
