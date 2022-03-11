@@ -23,7 +23,7 @@ $db = new DataBase();
 $pid = $_GET["pid"];
 
 
-if (!Security::checkPostOwnerShip($pid, Session::getValue('id'))){ //verifica dono do comentario, somente o autor pode apagar o comentario
+if (!Security::checkPostOwnerShip($pid, Session::getValue('id'))){ //verifica dono do post, somente o autor pode apagar o post
 
 	header("Location: home.php");
 	exit();
