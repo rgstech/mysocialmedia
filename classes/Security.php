@@ -16,9 +16,6 @@ class Security {
     public static function checkCommentOwnerShip(int $cid, int $uid) // 'checar' dono do comentario / verify comment owner
     { 
             
-       // $vcomment = $this->where('com_pk_id', $cid)
-       //                  ->first();
-       
         $db = self::_getDb();
 
         $db->AbrirConexao();
