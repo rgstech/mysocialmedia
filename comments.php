@@ -146,6 +146,6 @@ function refreshLikesComm(cid, uid, elemento){
 
 
 
-<?php include_once 'foot.php'; ?>
+<?php require_once 'foot.php'; ?>
 
 

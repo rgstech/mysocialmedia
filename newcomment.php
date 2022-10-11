@@ -79,4 +79,4 @@ if ( isset($_POST['action']) ) {
 </div>
 
 
-<?php include_once 'foot.php'; ?>
+<?php require_once 'foot.php'; ?>

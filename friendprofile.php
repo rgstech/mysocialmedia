@@ -82,4 +82,4 @@ $db->SetSELECT("usu_nome as nome,
     
 </div>
 
-<?php include_once 'foot.php'; ?>
+<?php require_once 'foot.php'; ?>
